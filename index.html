@@ -1,25 +1,64 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Desenhe Rápido</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title> app-web-filtros-projeto-c114-116</title>
+
     <style>
-      canvas {
-          border: 1px solid black;
-          margin: 0 auto;
-      }
-  </style>
+        /* Estilo para a tag de título */
+        .site-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(93, 13, 255);
+        }
+
+        /* Estilo para a tela */
+        .screen {
+            border: 2px solid #4c68b6;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo para o botão */
+        .filter-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        body{
+            text-align: center;
+            background-image: url('barba.jpg');
+         
+        }
+    </style>
 </head>
 <body>
-        <h1>Desenhe Rápido</h1>
-        <p id="sketchText">Seu Esboço</p>
-        <p id="accuracyText">Precisão</p>
-        <p id="drawnSketchText">Esboço a Ser Desenhado</p>
-        <canvas id="myCanvas" width="280" height="280"></canvas>
-
-    <span id="scoreText">Pontuação:</span>
-    <span id="timeText">Tempo:</span>
-    <script src="main.js"></script>
+    <div class="container">
+        <!-- Tag de título com classe Bootstrap -->
+        <h1 class="site-title">app-web-filtros-projeto-c114-116</h1>
+        
+        <!-- Tela para exibir a imagem de plano de fundo -->
+        <div class="screen">
+            <!-- Adicione a imagem de plano de fundo aqui -->
+            <img src="que fofo.jpeg" alt="Imagem de Plano de Fundo" id="background-image">
+            
+            <!-- Botão para salvar a imagem com filtro -->
+            <button class="filter-button" onclick="salvarImagemComFiltro()">Salvar com Filtro</button>
+        </div>
+    </div>
 </body>
 </html>
